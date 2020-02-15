@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<form>
+	<!-- everything is seperated by div's -->
+<div>
+	<label for="firstName">First Name:</label>
+	<input id="firstName" type="text" placeholder="John" required>
+
+	<label for="lastName">Last Name:</label>
+	<input id="lastName" type="text" placeholder="Smith" required>
+</div>
+
+<div>
+	<!-- instructer has for="radio-choice-1" -->
+	<label for="male">Male</label>
+	<input type="radio" name="gender" id="male" value="male">
+
+	<label for="female">Female</label>
+	<input type="radio" name="gender" id="female" value="female">
+
+	<label for="other">Other</label>
+	<input type="radio" name="gender" id="other" value="other">
+</div>
+<!-- Int. for="email" -->
+<div>
+	<label >E-mail:</label>
+	<!-- id="email" required placeholder="your email" -->
+	<input name="email" type="email" placeholder="your@email.com" required> 
+
+<!-- for="password" -->
+	<label >Password:</label>
+	<!-- id="password" -->
+	<input name="password" type="password" placeholder="your-password" pattern=".{8,12}" required title="8 to 12 characters">
+</div>
+
+<div>
+	<!-- for="select-choice" -->
+	<label >Birthday:</label>
+	<!-- name="select-choice" id="select-choice" -->
+	<select>
+		<!-- option value="0" selected disabled -->
+		<option disabled selected hidden>Month</option>
+		<!-- value="january" -->
+		<option>January</option>
+		<option>Febuary</option>
+		<option>March</option>
+	</select>
+
+	<!-- name="birthday-day" id="day"-->
+	<select>
+		<!-- value="0" select disabled -->
+		<option disabled selected hidden>Day</option>
+		<!-- value="1" -->
+		<option>01</option>
+		<option>02</option>
+		<option>03</option>
+	</select>
+
+	<!-- name="birthday-year" id="year" -->
+	<select>
+		<!-- value="0" selected disabled -->
+		<option year=>Year</option>
+		<!-- value="2015" -->
+		<option>2019</option>
+		<option>2020</option>
+		<option>2021</option>
+	</select>
+</div>
+	<!-- for="checkbox" -->
+	<label>I agree to the terms and conditions</label>
+	<!-- id="checkbox" -->
+	<input type="checkbox" name="confirm">
+	<br>
+	<input type="submit" name="submit">
+</form>
+
+</body>
+</html>
