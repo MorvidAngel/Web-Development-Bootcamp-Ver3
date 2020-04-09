@@ -42,7 +42,7 @@ p {
 
 .bg-dark {
   background: #333;
-  color: #f4f4f4;
+  color: #fff;
 }
 
 .bg-primary {
@@ -112,7 +112,7 @@ p {
 
 .list li {
   padding: 0.5rem 0;
-  border-bottom: #444 dottod 1px;
+  border-bottom: #444 dotted 1px;
 }
 
 /* Navbar */
@@ -136,7 +136,7 @@ p {
 #navbar ul li a {
   color: #fff;
   padding: 0.75rem;
-  margin: 0 0.25;
+  margin: 0 0.25rem;
 }
 
 #navbar ul li a:hover {
@@ -184,6 +184,7 @@ p {
   background: #93cb52;
   padding: 1rem;
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 /* Section: Who We Are */
@@ -199,7 +200,7 @@ p {
   background: url('../img/people.jpg') no-repeat center center/cover;
 }
 
-/* Section Clients */
+/* Section: Clients */
 #clients .items {
   display: flex;
 }

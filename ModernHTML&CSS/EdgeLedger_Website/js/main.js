@@ -8,10 +8,10 @@ function initMap() {
     center: loc,
   });
   // The marker, positioned at location
-  const marker = new google.maps.Maker({ position: loc, map: map });
+  const marker = new google.maps.Marker({ position: loc, map: map });
 }
 
-// Sticky menu Background
+// Sticky menu background
 window.addEventListener('scroll', function () {
   if (window.scrollY > 150) {
     document.querySelector('#navbar').style.opacity = 0.9;
