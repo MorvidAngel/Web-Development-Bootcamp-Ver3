@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/c708eee669.js"
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
-    ></script>
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Presentation</title>
   </head>
   <body>
     <!-- page 1 intro -->
     <section id="page-1" class="page">
-      <h1>Welcome To My Presenttation</h1>
+      <h1>Welcome To My Presentation</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
         provident vel sed pariatur quibusdam, possimus cum, dignissimos fuga
@@ -84,5 +86,25 @@
         ></a>
       </div>
     </section>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // smooth scrolling
+      $('.btn').on('click', function (event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          );
+        }
+      });
+    </script>
   </body>
 </html>
