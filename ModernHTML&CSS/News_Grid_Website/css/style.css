@@ -162,6 +162,10 @@ h6 {
   padding: 3rem;
 }
 
+.l-heading {
+  font-size: 3rem;
+}
+
 .list li {
   padding: 0.5rem 0;
   border-bottom: #555 dotted 1px;
@@ -288,6 +292,18 @@ h6 {
   grid-gap: 1rem;
   align-items: center;
   grid-column: 2 / span 2;
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .catagory {
+  margin-top: 0.4rem;
 }
 
 /* footer */
